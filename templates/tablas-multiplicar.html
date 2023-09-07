@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block title %} Tablas de multiplicar {% endblock title %}
+
+{% block content %}
+
+<div class="container">
+
+    <form class="tablaMulForm" action="" method="POST">
+        <label for="number">Elija su número: </label>
+        <input class="tablaMulForm__input" type="number" name="number">
+        <input class="tablaMulForm__button" type="submit" value="Generar tabla">
+    </form>
+
+
+    <h1 class="">Tabla de multiplicar del {{number}}</h1>
+
+    <div class="tabla-de-multiplicar">
+        {% for i in tabla %}
+            
+        <p class="tabla-de-multiplicar__multi">{{ number }} X {{ i }} = {{ number * i }}</p>
+
+        {% endfor %}
+    </div>
+
+
+
+</div>
+    
+{% endblock content %}

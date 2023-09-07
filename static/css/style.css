@@ -1,0 +1,123 @@
+/*GLOBAL*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+h1 {
+    text-align: center;
+}
+
+/*NAV*/
+.nav {
+    background-color: steelblue;
+    margin-bottom: 40px;
+}
+.nav__logo {
+    display: block;
+    padding: 30px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/*-----------------------------------------INDEX-----------------------------------------*/
+.indexLinks__item {
+    margin-bottom: 20px;
+    background-color: steelblue;
+    border-radius: 10px;
+    border: 2px solid steelblue;
+}
+.indexLinks__item:hover {
+    background-color: white;
+}
+
+.indexLinks__item:hover .indexLinks__link {
+    color: steelblue;
+}
+
+.indexLinks__link {
+    font-size: 20px;
+    display: block;
+    color: white;
+    padding: 30px;
+    font-weight: bold;
+}
+
+
+
+
+/*-----------------------------------------TABLAS DE MULTIPLICAR-----------------------------------------*/
+
+
+
+.tablaMulForm {
+    display: block;
+    text-align: center;
+}
+.tablaMulForm__input {
+    width: 60px;
+    height: 40px;
+    margin: 0 20px;
+}
+
+.tabla-de-multiplicar {
+    background-color: steelblue;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.tabla-de-multiplicar__multi {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+/*-----------------------------------------FOOTER-----------------------------------------*/
+
+footer {
+    background-color: rgb(58, 88, 112);
+    position: absolute;
+    display: block;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+}
+
+footer p span {
+    color: orange;
+}
